@@ -1,22 +1,76 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Otrs etiquetas</title>
-</head>
-<body>
+
+    <style>
+        span {
+            color: red;
+        }
+    </style>
+  </head>
+  <body>
     <header></header>
 
     <main>
-        <h1>Otras etiquetas muy usadas</h1>
+      <h1>Otras etiquetas muy usadas</h1>
+
+      <address>
+        Tony Stark
+        <br />
+        Malibu 10880 90265 California
+      </address>
+
+      <blockquoteb cite="www.google.com">
+        <p>yo solo se que no se nada</p>
+      </blockquoteb>
+
+      <pre>
+            Hola,
+            ¿Qué tal?
+        </pre
+      >
+
+      <div>
+        <h2>Adrian</h2>
+        <p>email; dsdbnws@dmsñd.com</p>
+        <p>Descripción</p>
+      </div>
+
+      <hr />
+
+      <!-- etiquetas de linea y código ASCII -->
+
+      <p>
+        Lorem ipsum,
+        <span>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem, ea.
+        </span>
+        dolor sit amet consectetur adipisicing elit. Molestiae amet, facilis
+        quia mollitia reprehenderit, praesentium libero dolorem consectetur sed
+        ullam, quod maiores iste explicabo qui.
+      </p>
+
+      <q cite="www.google.com">
+        Yo soy ironman
+      </q>
+
+      <pre>
+          <code>
+              system.out.println("Hello world");
+          </code>
+      </pre>
+      <p>La etiqueta <code>&#60;h1&#62; </code>se utiliza para representar títulos de primer nivel</p>
+
+
 
     </main>
 
     <footer></footer>
-    
-</body>
+  </body>
 </html>
 
 <!-- 
@@ -32,5 +86,17 @@
 
     hr: horizontal rule, se utiliza para decirle al navegador que
     vamos a cambiar de tema.
+
+    span: Es un contenedor de línea, equivalente a div, se suele usar para encerrar palabras o pequeños textos y 
+    darles estilo a través de CSS o localizarlos desde javscript. Semánticamente no significan nada.
+
+    q: Es el equivalente a blockquote, significa quote, por eso el de bloque se llama block - quote.
+    Sirve para poner citas pero en linea.
+
+    code: Sirve para encerrar código que queremos representar visualmente, suele ir
+    unido con la etiqueta pre.
+
+    Entidades especiales en HTML - Códifo ASCII
+        https://ascii.cl/es/codigos-html.htm
 
  -->
