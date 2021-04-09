@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos de input</title>
+</head>
+<body>
+    <header></header>
+
+    <main>
+        <h1>Tipos de input</h1>
+
+        <form>
+            <input>
+            <input type="button" value="Enviar"> <!-- no sirve para enviar el form, ni actualiza la página, puede servir para hacer
+            alguna operacion CON JAVASCRIPT -->
+            <input type="submit" value="Enviar"><!-- Si quisieramos que enviara el form entonces cambiamos el type a submit -->
+            <button>Enviar</button><!-- Si envia el form y actualiza la página -->
+        </form>
+
+
+        <form>
+            <input>
+            <input type="button" value="Enviar input"> <!-- Este sigue sirviendo solo para javascript :v-->
+            <button>Enviar</button>
+        </form>
+
+        <h2>Inputs tipo fecha</h2>
+
+        <form>
+            <input type="date">
+            <input type="datetime"> <!-- obsoleto -->
+            <input type="datetime-local">
+            <p>De esta manera se puede remplazar el <code>datetime</code> para que tambien funcione en firefox</p>
+            <input type="date">
+            <input type="time"> <br>
+            <input type="month">
+            <input type="week">
+        </form>
+
+
+
+
+    </main>
+
+    <footer></footer>
+</body>
+</html>
+<!-- 
+    input type:
+    button: Se comporta igualq ue un botón <button>
+    color: Se utiliza para especificar un color
+
+
+    date: Se utiliza para introducir una fecha
+    datetime: obsoleto
+    datetime-local: fecha y hora, no funciona en firefox
+    email: se utiliza para introducir un email
+    hidden: Campo oculto, puede contener valor pero no mostrarse
+    time: Se utiliza para introducir una hora
+            TIP
+                *Se recomienda usar datetime-local y time para seleccionar fecha y hora.
+    month: Se utiliza para introducir un mes
+
+
+    number: Se utiliza para valores numéricos
+    password: Se utiliza para contraseñas
+    range: Se utiliza para establecer un rango
+    reset: Resetea el formulario
+    search: Se utiliza para las barras de busqueda
+    submit: Se utiliza para enciar el formulario
+    tel: Se utiliza para introducir números telefónicos
+    text: Valor por defecto
+    url: se utiliza para introducir URLs
+    week: Se utiliza para introducir el número de semana del año
+ -->
