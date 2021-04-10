@@ -1,52 +1,131 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tipos de input</title>
-</head>
-<body>
+  </head>
+  <body>
     <header></header>
 
     <main>
-        <h1>Tipos de input</h1>
+      <h1>Tipos de input</h1>
 
-        <form>
-            <input>
-            <input type="button" value="Enviar"> <!-- no sirve para enviar el form, ni actualiza la página, puede servir para hacer
+      <form>
+        <input />
+        <input type="button" value="Enviar" />
+        <!-- no sirve para enviar el form, ni actualiza la página, puede servir para hacer
             alguna operacion CON JAVASCRIPT -->
-            <input type="submit" value="Enviar"><!-- Si quisieramos que enviara el form entonces cambiamos el type a submit -->
-            <button>Enviar</button><!-- Si envia el form y actualiza la página -->
-        </form>
+        <input type="submit" value="Enviar" />
+        <!-- Si quisieramos que enviara el form entonces cambiamos el type a submit -->
+        <button>Enviar</button>
+        <!-- Si envia el form y actualiza la página -->
+      </form>
 
+      <form>
+        <input />
+        <input type="button" value="Enviar input" />
+        <!-- Este sigue sirviendo solo para javascript :v-->
+        <button>Enviar</button>
+      </form>
 
-        <form>
-            <input>
-            <input type="button" value="Enviar input"> <!-- Este sigue sirviendo solo para javascript :v-->
-            <button>Enviar</button>
-        </form>
+      <h2>Inputs tipo fecha</h2>
 
-        <h2>Inputs tipo fecha</h2>
+      <form>
+        <input type="date" />
+        <input type="datetime" />
+        <!-- obsoleto -->
+        <input type="datetime-local" />
+        <p>
+          De esta manera se puede remplazar el
+          <code>datetime</code>
+          para que tambien funcione en firefox
+        </p>
+        <input type="date" />
+        <input type="time" />
+        <br />
+        <input type="month" />
+        <input type="week" />
+      </form>
 
-        <form>
-            <input type="date">
-            <input type="datetime"> <!-- obsoleto -->
-            <input type="datetime-local">
-            <p>De esta manera se puede remplazar el <code>datetime</code> para que tambien funcione en firefox</p>
-            <input type="date">
-            <input type="time"> <br>
-            <input type="month">
-            <input type="week">
-        </form>
+      <h2>Inputs varios</h2>
 
+      <form>
+        <input type="color" />
+        <input type="number" />
+        <input type="range" step="5" min="0" max="20" />
+        <input type="reset" />
+        <input type="text" />
+      </form>
 
+      <h2>
+        Elementos seleccionables
+      </h2>
+      <form>
+        <label>Masculino</label>
+        <input type="radio" name="gender" />
 
+        <label>Femenino</label>
+        <input type="radio" name="gender" />
 
+        <label>Desconocido</label>
+        <input type="radio" name="gender" />
+
+        <label>Humano</label>
+        <input type="radio" name="gender" value="humano" />
+        <!-- el value solo nos sirve para poder indicar que valor recibiran despueas
+            de haber enviado el form -->
+
+        <h2>
+          Elementos seleccionables checkbox
+        </h2>
+
+        <label>Español</label>
+        <input type="checkbox" name="languages" value="español" />
+
+        <label>Inglés</label>
+        <input type="checkbox" name="languages" value="ingles" />
+
+        <label>Japones</label>
+        <input type="checkbox" name="languages" value="japones" />
+
+        <h2>Selects</h2>
+
+        <select name="lenguajes">
+          <option value="html">HTML</option>
+          <option value="css">CSS</option>
+          <option value="javascript">JavaScript</option>
+        </select>
+
+        <select name="lenguajes" multiple>
+          <option value="html">HTML</option>
+          <option value="css">CSS</option>
+          <option value="javascript">JavaScript</option>
+        </select>
+
+        <select name="mascotas">
+          <optgroup label="4 patas">
+            <option value="perro">Perro</option>
+            <option value="gato">Gato</option>
+            <option value="hamster">Hamster</option>
+            <option value="conejo">Conejo</option>
+          </optgroup>
+
+          <optgroup label="2 patas">
+            <option value="loro">Loro</option>
+            <option value="canario">Canario</option>
+          </optgroup>
+
+          <optgroup label="Sin patas">
+            <option value="pez">Pez</option>
+          </optgroup>
+        </select>
+      </form>
     </main>
 
     <footer></footer>
-</body>
+  </body>
 </html>
 <!-- 
     input type:
@@ -76,3 +155,18 @@
     url: se utiliza para introducir URLs
     week: Se utiliza para introducir el número de semana del año
  -->
+
+<!-- 
+    Otros inputs:
+    radio:  Permite seleccionar una única opción de una lista de opciones relacionadas.
+
+    checkbox: Permite seleccionar varias opciones de una lista de opciones relacionadas
+
+    select: Crea una lista de opciones donde podemos seleccionar una o varias opciones
+
+    Cada opción irá dentro de una etiqueta <option> </option>
+
+    Si tenemos muchas opciones podemos ordenarlas por categorías a través de la etiqueta <optgroup> con el atributo 
+    label para nombrar categorias
+
+  -->

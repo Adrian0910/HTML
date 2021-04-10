@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DataList</title>
+  </head>
+  <body>
+    <header></header>
+
+    <main>
+      <h1>DataList</h1>
+
+      <div>
+        <form>
+          <input type="list" list="mascotas" />
+          <datalist id="mascotas">
+            <option value="perro">lomitos</option>
+            <option value="gato">michis</option>
+            <option value="hamster">Hamster</option>
+            <option value="conejo">Conejo</option>
+          </datalist>
+        </form>
+      </div>
+
+      <div>
+        <form>
+          <fieldset>
+              <legend>Datos personales</legend>
+            <label for="name">Nombre</label>
+            <input type="text" id="name" />
+            <label for="surname">Apellidos</label>
+            <input type="text" id="surname" />
+          </fieldset>
+          <input type="file">
+          <label for="fuel">Combustible</label>
+          <meter id="fuel" min="0" max="100" value="65" low="30" high="80" optimum="65"></meter>
+
+          <label for="task">Tarea 1</label>
+          <progress id="task" max="100" value="10"></progress>
+          <label for="message">Mensaje</label>
+          <textarea name="" id="message" cols="30" rows="10"></textarea>
+        </form>
+      </div>
+      
+      <div>
+          <p>Placeholder</p>
+          <form>
+              <input type="text" placeholder="Introduce tu nombre" required> <!-- Esta validacion debe estar tambien en JS o de lo contrario
+                el usuario podria modificarlas desde el inspector -->
+              <input type="text" value="Hola" readonly>
+              <input type="text" value="Hola" disabled>
+              <select name="numbers">
+                  <option value="one">One</option>
+                  <option value="two" selected>Two</option>
+              </select>
+              <input type="number" min="5" max="10">
+              <input type="text" minlength="2" maxlength="5" required autofocus>
+              <input type="submit">
+          </form>
+      </div>
+    </main>
+
+    <footer></footer>
+  </body>
+</html>
+<!-- 
+    Son muy familiares a los select, solo que incluyen un filtro para que se puedan buscar de un manera mas sencilla.
+    Este filtro se activa cada que pones alguna palabra o inicial.
+
+    Otros elementos dentro del formulario:
+    
+    fieldset: Se utiliza para agrupar elementos dentro de un formulario
+
+    legend: Representa una etiqueta pra el contenido del fieldset
+
+    file: Este input se utiliza para cargar archivos y enviarlos desde un formulario
+
+    meter: Representa un valor dentro de un rango conocido
+
+    progress: Representa el progreso de una tarea
+
+    textarea: Se utiliza para introducir texto en un formulario
+ -->
+
+ <!-- 
+     Otros atributos para formularios
+     placeholder: Da una pista de lo que el usuario tiene que introducir
+    required: Hace que un campo sea obligatorio
+    readonly: hace que un campo sea de solo lectura
+    min - max: Establece el mínimo y máximo de un campo numérico
+    maxlenght - minlenght: Establece el mínimo y máximo de caracteres de un campo de texto
+    selected: equivale a checked en los select, sirve para establecer una opción por defecto
+    disabled: Desactiva el campo, no se podrá escribir en el autofocus
+    autofocus: para poner el foco por defecto al cargar el formulario
+  -->

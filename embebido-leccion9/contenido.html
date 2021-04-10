@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contenido embebido</title>
+    <style>
+        img {
+            max-width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <header></header>
+
+    <main>
+        <h1>Tipos de imagenes</h1>
+        <div>
+            <h2>Contenido embebido</h2>
+            <img src="assets/images/pikachupng.png" width="300" alt="pikachu">
+            <img src="assets/images/starjpg.jpg" alt="STW">
+            <img src="assets/images/mundogif.gif" alt="Mundo">
+        </div>
+        <div>
+            <h2>Atributo srcset</h2>
+            <img srcset="assets/images/mundoweb.webp,
+            assets/images/mundogif.gif 3x"
+            alt="Gif del mundo">
+        </div>
+
+        <div>
+            <h2>Picture</h2>
+            <picture> <!-- Esta tambien funciona para mostrar la imagen de respaldo -->
+                <source srcset="assets/images/mundoweb.webp,
+                assets/images/mundogif.gif 3x" media="(min-width:100px"> <!-- media modifica el tamaño en funcion de la pantalla -->
+                <img src="assets/images/mundogif.gif" alt="Mundo gif">
+            </picture>
+        </div>
+    </main>
+
+    <footer></footer>
+    
+</body>
+</html>
+
+<!-- 
+    para imagenes que sean íconos, logos o adornos usar formato SVG
+    para imágenes que sean fotograficas o de distinto tipo (jpg, png, gif)usar webP
+
+    Divece pixel ratio: representa la relacion entre los pixeles reales del dispositivo y los disponibles para dibujarlo
+
+    NO utilices el mismo tamaño de imagen para la version de escritorio y la version móvil
+ -->

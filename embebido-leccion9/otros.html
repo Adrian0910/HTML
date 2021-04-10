@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Otros contenidos embebidos</title>
+  </head>
+  <body>
+    <header></header>
+
+    <main>
+      <h1>Otros contenidos embebidos</h1>
+      <div>
+        <h2>Audio</h2>
+        <audio
+          src="assets/audio/Bon Jovi - Livin' On A Prayer (Official Music Video).mp3"
+          controls
+          autoplay
+          muted
+        ></audio>
+        <!-- Nunca pongas autoplay, perturba al usuario. A meenos que lo mutees-->
+      </div>
+      <div>
+        <h2>Video</h2>
+        <video
+          src="assets/video/Bon Jovi  video.mp4"
+          controls
+          muted
+          loop
+          poster="assets/images/pikachupng.png"
+        ></video>
+      </div>
+      <div>
+        <h2>iframes</h2>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/Hr0Ar-_lu4A"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <div>
+        <h2>Figure</h2>
+        <h3>Gatos y michis</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
+          suscipit facilis ex necessitatibus vitae tempore voluptate, expedita,
+          quod doloribus deleniti recusandae iste dignissimos corrupti veritatis
+          incidunt laudantium optio, architecto aspernatur ipsum magni neque.
+          Amet, molestiae assumenda. Inventore, dolore provident amet, rem,
+          deserunt enim adipisci tempora mollitia rerum ad eaque deleniti.
+        </p>
+        <figure>
+            <img src="assets/images/mundoweb.webp" alt="Esto no es un michi">
+            <figcaption>Esto no es un michi</figcaption> <!-- Pie de foto -->
+        </figure>
+        <!-- Mete el contenido que es opcional para el tema -->
+      </div>
+    </main>
+
+    <footer></footer>
+  </body>
+</html>
